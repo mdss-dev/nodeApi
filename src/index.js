@@ -6,6 +6,6 @@ app.get("/node", (req, res) => {
   res.json({ message: "Hello World!" });
 });
 
-app.listen(3333, function () {
+app.listen(3000, function () {
   console.log("Api started");
 });
