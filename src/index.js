@@ -2,23 +2,25 @@ const express = require("express");
 
 const app = express();
 
-app.get("/course", (req, res) => {
+app.use(express.json());
+
+app.get("/courses", (req, res) => {
   return res.json(["Course 1", "Course 2", "Course 3"]);
 });
 
-app.post("/course", (req, res) => {
+app.post("/courses", (req, res) => {
   return res.json(["Course 1", "Course 2", "Course 3", "Course 4"]);
 });
 
-app.put("/course/:id", (req, res) => {
+app.put("/courses/:id", (req, res) => {
   return res.json(["Course 6", "Course 2", "Course 3", "Course 4"]);
 });
 
-app.patch("/course/:id", (req, res) => {
+app.patch("/courses/:id", (req, res) => {
   return res.json(["Course 6", "Course 7", "Course 3", "Course 4"]);
 });
 
-app.delete("/course/:id", (req, res) => {
+app.delete("/courses/:id", (req, res) => {
   return res.json(["Course 6", "Course 7", "Course 4"]);
 });
 
