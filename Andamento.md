@@ -20,6 +20,8 @@
 
     ### 02 - Primeiro projeto com Node.js
 
+    		01. Conhecendo os requisitos da aplicação
+
 ## Chapter II
 
     ### 01 - Iniciando a API

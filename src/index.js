@@ -1,18 +1,20 @@
 const express = require("express");
+const { v4: uuidv4 } = require("uuid");
 
 const app = express();
 
 app.use(express.json());
 
+app.post("/account", (req, res) => {
+  const { cpf, name } = req.body;
+  const id = uuidv4();
+});
+
 app.get("/courses", (req, res) => {
   return res.json(["Course 1", "Course 2", "Course 3"]);
 });
 
-app.post("/courses", (req, res) => {
-  return res.json(["Course 1", "Course 2", "Course 3", "Course 4"]);
-});
-
-app.put("/courses/:id", (req, res) => {
+app.put("/account/:id", (req, res) => {
   return res.json(["Course 6", "Course 2", "Course 3", "Course 4"]);
 });
 
