@@ -21,6 +21,16 @@
     ### 02 - Primeiro projeto com Node.js
 
     		01. Conhecendo os requisitos da aplicação
+    		02. Cadastro de conta
+    		03. Validando CPF existente
+    		04. Listando extrato
+    		05. Validando a conta
+    		06. Middlewares
+    		07. Criando depósito na conta
+    		08. Criando saque na conta
+    		09. Listar extrato bancário por data
+    		10. Atualizar conta
+    		11. Remover conta
 
 ## Chapter II
 
